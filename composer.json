@@ -1,6 +1,7 @@
 {
     "name": "wiseadmin/wise-oauth",
-    "description": "WiseAdmin 第三方 OAuth 登录包 — 支持微信/QQ/GitHub/钉钉等平台，自动关联或创建账号，多账号绑定解绑",
+    "description": "WiseAdmin 第三方 OAuth 登录包 — 支持微信/QQ/GitHub/钉钉/Gitee/Google/微博等平台，自动关联或创建账号，多账号绑定解绑",
+    "homepage": "https://github.com/hiwiseadmin/wise-oauth",
     "type": "library",
     "license": "MIT",
     "keywords": [
@@ -12,6 +13,12 @@
         "github",
         "dingtalk",
         "wiseadmin"
+    ],
+    "authors": [
+        {
+            "name": "WiseAdmin Team",
+            "email": "wiseadmin@126.com"
+        }
     ],
     "require": {
         "php": ">=8.1",
@@ -42,5 +49,18 @@
             },
             "migrate-path": "database/migrations"
         }
+    },
+    "archive": {
+        "exclude": [
+            "/tests",
+            "/docs",
+            "/.github",
+            "/phpunit.xml",
+            "/.gitattributes",
+            "/.gitignore",
+            "/*.md",
+            "!/README.md",
+            "/qa/"
+        ]
     }
 }
